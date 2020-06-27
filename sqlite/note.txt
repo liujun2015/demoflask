@@ -1,0 +1,4 @@
+1 初始创建sqlite数据库的方法
+在sqlite所在目录的命令行界面，输入 sqlite3 automation.db，再输入.databases初始化数据库
+
+

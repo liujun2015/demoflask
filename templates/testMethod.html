@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/table.html' import render_table %}
+
+{% block content %}
+    {{ render_table(methodList) }}
+    <h5>{{ methodList|length }} testMethod
+    </h5>
+    <div class="list-group">
+        {% for method in methodList %}
+            <ul>
+                <li>{{ method.methodName }}</li>
+            </ul>
+        {% endfor %}
+    </div>
+{% endblock %}
